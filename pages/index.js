@@ -2,6 +2,7 @@ import Head from 'next/head'
 import LandingPage from '../components/LandingPage'
 import {Press_Start_2P} from '@next/font/google'
 import Contact from '../components/Contact'
+import Skills from '../components/Skills'
 
 const press = Press_Start_2P({
     subsets: ['latin'],
@@ -18,6 +19,7 @@ export default function Home() {
       </Head>
   
       <LandingPage/>
+      <Skills/>
       <Contact/>
 
     </div>
