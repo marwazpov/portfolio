@@ -16,7 +16,7 @@ const Contact = () => {
       });
   };
   return (
-    <div id="contact" className='grid content-center min-h-screen'>
+    <div  id="contact" className='grid content-center min-h-screen'>
      <h1 className='text-white ml-12 mt-5 text-3xl'>Get in touch</h1>
     
      <div className= 'grid md:grid-cols-2 md:grid-rows-1 pt-5 pb-5 text-xs'> 

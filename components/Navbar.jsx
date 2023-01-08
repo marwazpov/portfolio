@@ -11,8 +11,9 @@ const press = Press_Start_2P({
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
+  const [blur, setBlur] = useState(false)
   const [color, setColor] = useState('transparent');
-  const [textColor, setTextColor] = useState('white');
+  const [textColor, setTextColor] = useState('#FFFFFF');
 
   const handleNav = () => {
     setNav(!nav);
@@ -22,10 +23,14 @@ const Navbar = () => {
     const changeColor = () => {
       if (window.scrollY >= 90) {
         setColor('#ffffff');
-        setTextColor('#000000');
+        setTextColor('#00000');
+        setBlur('backdrop-blur-sm bg-white/30')
+     
       } else {
         setColor('transparent');
-        setTextColor('#ffffff');
+        setTextColor('#FFFFFF');
+        setBlur('backdrop-filter-none')
+        
       }
     };
     window.addEventListener('scroll', changeColor);
@@ -33,8 +38,7 @@ const Navbar = () => {
 
   return (
     <div
-      style={{ backgroundColor: `${color}` }}
-      className='fixed left-0 top-0 w-full z-10 ease-in duration-300'
+      className={`${blur} fixed left-0 top-0 w-full z-10 ease-in duration-300`}
     >
       <div className=' m-auto flex justify-between items-center p-2'>
         <Link href='/'>
@@ -42,7 +46,7 @@ const Navbar = () => {
             Captur
           </h1> */}
         </Link>
-        <ul style={{ color: `${textColor}` }} className={`${press.className} text-${textColor} text-xs hidden sm:flex`}>
+        <ul style={{ color: `${textColor}` }} className={`${press.className}  text-${textColor} text-xs hidden sm:flex`}>
           <li className='p-4'>
             <Link href='/'>Home</Link>
           </li>
@@ -88,10 +92,10 @@ const Navbar = () => {
               <Link href='/#skills'>Skills</Link>
             </li>
             <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
-              <Link href='/projects'>Projects</Link>
+              <Link href='/#projects'>Projects</Link>
             </li>
             <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
-              <Link href='/contact'>Contact</Link>
+              <Link href='/#contact'>Contact</Link>
             </li>
           </ul>
         </div>

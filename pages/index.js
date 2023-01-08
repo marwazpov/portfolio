@@ -20,7 +20,7 @@ export default function Home() {
         <title>Marwa Salameh</title>
       </Head>
   
-      <LandingPage/>
+      <LandingPage />
       <About/>
       <Skills/>
       <Projects/>
