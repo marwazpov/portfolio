@@ -3,6 +3,9 @@ import {projectsData} from "../util/data/projectsData"
 import { motion } from "framer-motion"
 import { useRouter } from "next/router";
 // import Link from "next/link";
+import Aos from 'aos'
+import "aos/dist/aos.css"
+import { useEffect } from "react";
 
 function Projects() {
 
@@ -12,9 +15,12 @@ function Projects() {
   console.log(path) 
   router.push(`projects/${path}`)
  }
-  
+ useEffect(()=>{
+  Aos.init({});
+}, []);
+
   return (
-  <div  id="projects" className='grid items-end min-h-screen '>
+  <div  id="projects" className='grid content-center min-h-screen '>
     
     <h1 className="ml-12 mt-8">Projects</h1>
     
@@ -29,15 +35,7 @@ function Projects() {
           <div key={project.title}
            className="flex flex-col text-white flex-shrink-0 snap-center pt-2  w-screen space-y-5 items-center justify-center">
             
-          <motion.img 
-          initial={{
-            y:-300,
-            opacity:0
-          }}
-          transition={{duration: 1.2}}
-          whileInView={{opacity:1, y:0}}
-          viewport={{once:true}}
-           src={project.src}/>
+           <img data-aos="zoom-in" className="w-96" src={project.src}/>
 
           <h1>{project.title}</h1>
          <div className="flex flex-row w-3/4 "> 
