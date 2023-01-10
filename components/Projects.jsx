@@ -28,7 +28,7 @@ function Projects() {
     initial={{opacity: 0}}
     whileInView={{opacity: 1}}
     transition={{duration:1.5}}
-    className="relative flex overflow-x-scroll  overflow-y-hidden pb-8 snap-x snap-mandatory">
+    className="relative flex overflow-x-scroll overflow-y-hidden pb-8 snap-x snap-mandatory">
       {projectsData.map((project)=>{
         return(
           

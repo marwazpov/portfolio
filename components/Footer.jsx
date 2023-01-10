@@ -18,15 +18,15 @@ const Footer = () => {
           <div className=" mt-4  sm:justify-center md:mt-0">
             <ul className='flex space-x-6 '>
                 <li>
-                    <a href="https://www.instagram.com/floatingiota/" className='visited:text-yellow-500' target="_blank"><IoLogoInstagram/>
+                    <a href="https://www.instagram.com/floatingsol/" className='text-white visited:text-yellow-500' target="_blank"><IoLogoInstagram/>
                     </a>
                 </li>
                 <li>
-                    <a href="https://github.com/marwazpov" className='visited:text-yellow-500' target="_blank"><IoLogoGithub/></a>
+                    <a href="https://github.com/marwazpov" className='text-white visited:text-yellow-500' target="_blank"><IoLogoGithub/></a>
                 </li>
 
                 <li>
-                    <a href='https://www.linkedin.com/in/marwa-salameh/' className='visited:text-yellow-500' target="_blank"><IoLogoLinkedin /></a> 
+                    <a href='https://www.linkedin.com/in/marwa-salameh/' className='text-white visited:text-yellow-500' target="_blank"><IoLogoLinkedin /></a> 
                 </li>
                     
               
