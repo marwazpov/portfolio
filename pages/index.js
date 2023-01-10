@@ -14,7 +14,7 @@ const press = Press_Start_2P({
 
 export default function Home() {
   return (
-    <div className={`${press.className} portfolio`}>
+    <div className={`${press.className} text-white portfolio`}>
       <Head>
        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
         <title>Marwa Salameh</title>
