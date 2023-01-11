@@ -2,14 +2,7 @@ import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 
-import {Press_Start_2P} from '@next/font/google'
-
-const press = Press_Start_2P({
-    subsets: ['latin'],
-    weight : ['400']
-})
-
-const Navbar = () => {
+const Navbar = ({press}) => {
   const [nav, setNav] = useState(false);
   const [blur, setBlur] = useState(false)
   const [color, setColor] = useState('transparent');

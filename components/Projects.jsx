@@ -44,7 +44,7 @@ function Projects() {
             <button  
               onClick={(e) => handleClick(e, `${project.path}`)}
               className='mr-12 bg-white hover:bg-gray-300 hover:text-yellow-500 text-orange-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow'> 
-              Read more
+              Learn more
              </button>
          </div>
            

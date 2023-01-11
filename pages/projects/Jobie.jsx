@@ -9,15 +9,15 @@ const press = Press_Start_2P({
 
 const Jobie = () => {
   return (
-    <div className={`${press.className} portfolio mt-9 grid items-center min-h-screen`}>
+    <div className={`${press.className} text-white portfolio mt-9 grid items-center min-h-screen`}>
        {projectsData.map((project)=>{
         if (project.path === 'Jobie'){
           return(
-            <div  key={project.title} className="grid grid-cols-2 space-x-6 pl-10 pr-10">
+            <div  key={project.title} className="md:grid md:grid-cols-2 md:space-x-6 md:pl-10 md:pr-10 pl-4">
             <h1 className="col-span-2 pb-5">{project.title}</h1>
 
             <div>
-              <p className="text-sm">{project.text}</p>
+              <p className="text-xs md:text-sm md:mr-0 mr-9">{project.text}</p>
               
               <div className="flex col-span-2 mt-4"> 
                   <p> check code </p>
@@ -33,9 +33,9 @@ const Jobie = () => {
                </a>
             </div>
            
-          </div>
+            </div>
             
-            <img src={project.image} alt={project.title}/>
+            <img className="w-96" src={project.image} alt={project.title}/>
 
            
             </div>

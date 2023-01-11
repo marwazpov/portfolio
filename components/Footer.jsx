@@ -1,12 +1,6 @@
-import {Press_Start_2P} from '@next/font/google'
 import { IoIosHeart, IoLogoGithub, IoLogoInstagram, IoLogoLinkedin } from "react-icons/io";
 
-const press = Press_Start_2P({
-    subsets: ['latin'],
-    weight : ['400']
-})
-
-const Footer = () => {
+const Footer = ({press}) => {
     return (
       
   <footer className="border-t-2 portfolio" >
