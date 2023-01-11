@@ -14,6 +14,7 @@ const Navbar = () => {
   const [blur, setBlur] = useState(false)
   const [color, setColor] = useState('transparent');
   const [textColor, setTextColor] = useState('#FFFFFF');
+  const [logo,setLogo]=useState('/pacman.png')
 
   const handleNav = () => {
     setNav(!nav);
@@ -36,13 +37,24 @@ const Navbar = () => {
     window.addEventListener('scroll', changeColor);
   }, []);
 
+
+
+  const handleHover=()=>{
+    setLogo('/ghost.png')
+
+  }
+  const handleMouseLeave=()=>{
+    setLogo('/pacman.png')
+
+  }
+
   return (
     <div
       className={`${blur} fixed left-0 top-0 w-full z-10 ease-in duration-300`}
     >
       <div className=' m-auto flex justify-between items-center'>
         <Link href='/'>
-          <img className='w-12 ml-2 md:w-20 md:ml-10' src="/logo.png" alt='logo'/>
+          <img className='w-12 ml-2 pt-2 pb-2 md:w-18 md:ml-10' onMouseOver={handleHover} onMouseLeave={handleMouseLeave} src={logo} alt='logo'/>
         </Link>
         <ul style={{ color: `${textColor}` }} className={`${press.className}  text-${textColor} text-xs hidden sm:flex mr-6`}>
           <li className='p-4'>

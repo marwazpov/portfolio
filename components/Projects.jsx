@@ -42,7 +42,7 @@ function Projects() {
              <p className='text-white line-clamp-3 ml-12'>{project.text}</p>
          
             <button  
-              onClick={(e) => handleClick(e, `${project.title}`)}
+              onClick={(e) => handleClick(e, `${project.path}`)}
               className='mr-12 bg-white hover:bg-gray-300 hover:text-yellow-500 text-orange-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow'> 
               Read more
              </button>
