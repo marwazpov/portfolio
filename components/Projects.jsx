@@ -20,7 +20,7 @@ function Projects() {
 }, []);
 
   return (
-  <div  id="projects" className='grid content-center min-h-screen '>
+  <div  id="projects" className='grid content-center md:min-h-screen'>
     
     <h1 className="ml-12 mt-8">Projects</h1>
     
