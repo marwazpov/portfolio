@@ -23,8 +23,8 @@ export default function Home() {
       <LandingPage />
       <About/>
       <Skills/>
-      <Projects/>
-      <Contact/>
+      {/* <Projects/>
+      <Contact/> */}
 
     </div>
     

@@ -12,7 +12,7 @@ const About = () => {
     }, []);
 
   return (
-    <div className='flex flex-col lg:flex-row lg:space-x-20 justify-around items-center min-h-screen m-8 lg:ml-12' id="about">
+    <div className='flex flex-col lg:flex-row lg:space-x-20 justify-around items-center min-h-screen lg:pl-10 p-4 lg:p-8' id="about">
 
         <div 
          data-aos="fade-right"
