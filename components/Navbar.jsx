@@ -43,7 +43,7 @@ const Navbar = ({press}) => {
 
   return (
     <div
-      className={`${blur} fixed left-0 top-0 w-full z-10 ease-in duration-300`}
+      className={`${blur} fixed left-0 top-0 w-full z-10 ease-in duration-100`}
     >
       <div className=' m-auto flex justify-between items-center'>
         <Link href='/'>
@@ -80,8 +80,8 @@ const Navbar = ({press}) => {
         <div
           className={
             nav
-              ? 'sm:hidden absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-300'
-              : 'sm:hidden absolute top-0 left-[-100%] right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-300'
+              ? 'sm:hidden absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-100'
+              : 'sm:hidden absolute top-0 left-[-100%] right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-00'
           }
         >
           <ul className={`${press.className} text-white`}>
