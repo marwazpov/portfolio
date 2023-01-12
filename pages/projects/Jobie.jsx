@@ -9,7 +9,7 @@ const press = Press_Start_2P({
 
 const Jobie = () => {
   return (
-    <div className={`${press.className} text-white portfolio mt-9 grid items-center min-h-screen`}>
+    <div className={`${press.className} text-white portfolio mt-9 grid items-center h-screen`}>
        {projectsData.map((project)=>{
         if (project.path === 'Jobie'){
           return(
