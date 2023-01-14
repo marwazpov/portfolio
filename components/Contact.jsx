@@ -64,9 +64,9 @@ const Contact = () => {
         <input 
           className='border-solid border-2 mt-7 border-white text-white hover:text-black hover:bg-white hover:opacity-75 hover:rounded-lg'
           type="submit" value="Send" />
-          
+          <ToastContainer theme='dark'/>
       </form>
-      <ToastContainer theme='dark'/>
+      
      
       <Render />
     </div>
