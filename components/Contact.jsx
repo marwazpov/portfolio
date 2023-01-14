@@ -1,40 +1,72 @@
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import Render from './Render'
 import emailjs from '@emailjs/browser';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Contact = () => {
-  const form = useRef();
 
+  const [userName, setUserName]=useState("")
+  const [userEmail, setUserEmail]=useState("")
+  const [userText, setUserText]=useState("")
+
+  const handleNameChange=(e)=>{
+    setUserName(e.target.value)
+  }
+
+  const handleEmailChange=(e)=>{
+    setUserEmail(e.target.value)
+  }
+
+  const handleTextChange = (e) =>{
+    setUserText(e.target.value)
+  }
+
+  const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs.sendForm('service_788kucq', 'template_jjwdsic', form.current, 'l6TBcrNapjj3PIQWq')
       .then((result) => {
           console.log(result.text);
+         
       }, (error) => {
           console.log(error.text);
       });
+      form.current.reset()
+      notify()
+
   };
+
+  const notify = () => toast("Your message is on its way to my email!");
   return (
     <div  id="contact" className='grid content-center md:min-h-screen'>
      <h1 className='text-white ml-12 text-3xl'>Get in touch</h1>
     
      <div className= 'grid md:grid-cols-2 md:grid-rows-1 pt-5 pb-5 text-xs'> 
-      <form className='flex flex-col w-72 ml-12' ref={form} onSubmit={sendEmail}>
+      <form className='flex flex-col w-72 ml-12' ref={form} onSubmit={sendEmail}  >
       <p  className='text-white mb-5'>
       If you have want to collebrate, have questions, or would love to chat,
        please get in touch using this form
       </p>
-        <label className='text-white mb-2'>Name</label>
-        <input type="text" name="from_name" />
-        <label className='text-white pt-5 mb-2'>Email</label>
-        <input  type="email" name="reply_to" />
-        <label className='text-white pt-5 mb-2'>Message</label>
-        <textarea className='' name="message" />
+        <label className='text-white mb-2' required>Name</label>
+        <input onChange={(e)=>handleNameChange(e)} type="text" name="from_name" required/>
+       <span className='text-red-700'>{userName !== "" ? <></>:'What can I call you?'}</span>
+
+        <label className='text-white pt-5 mb-2' htmlFor='email' required>Email</label>
+        <input onChange={(e)=>handleEmailChange(e)} type="email" name="reply_to" required />
+        <span className='text-red-700'>{userEmail !== "" ? <></>:'Add your email so I can get back to you :)'}</span>
+
+
+
+        <label className='text-white pt-5 mb-2' required>Message</label>
+        <textarea onChange={(e)=>handleTextChange(e)}  name="message"required />
         <input 
           className='border-solid border-2 mt-7 border-white text-white hover:text-black hover:bg-white hover:opacity-75 hover:rounded-lg'
           type="submit" value="Send" />
+          
       </form>
+      <ToastContainer theme='dark'/>
      
       <Render />
     </div>
