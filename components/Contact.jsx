@@ -41,10 +41,10 @@ const Contact = () => {
   const notify = () => toast("Your message is on its way to my email!");
   return (
     <div  id="contact" className='grid content-center md:min-h-screen'>
-     <h1 className='text-white ml-12 text-3xl'>Get in touch</h1>
+     <h1 className='text-white md:ml-12 ml-10 text-3xl'>Get in touch</h1>
     
      <div className= 'grid md:grid-cols-2 md:grid-rows-1 pt-5 pb-5 text-xs'> 
-      <form className='flex flex-col w-72 ml-12' ref={form} onSubmit={sendEmail}  >
+      <form className='flex flex-col w-72 md:ml-12 ml-10' ref={form} onSubmit={sendEmail}  >
       <p  className='text-white mb-5'>
       If you have want to collebrate, have questions, or would love to chat,
        please get in touch using this form

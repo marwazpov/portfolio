@@ -12,7 +12,7 @@ const Footer = ({press}) => {
           <div className=" mt-4  sm:justify-center md:mt-0">
             <ul className='flex space-x-6 '>
                 <li>
-                    <a href="https://www.instagram.com/floatingsol/" className='text-white visited:text-yellow-500' target="_blank"><IoLogoInstagram/>
+                    <a href="https://www.instagram.com/randomiz.ed/" className='text-white visited:text-yellow-500' target="_blank"><IoLogoInstagram/>
                     </a>
                 </li>
                 <li>
