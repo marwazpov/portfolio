@@ -2,7 +2,6 @@
 import {projectsData} from "../util/data/projectsData"
 import { motion } from "framer-motion"
 import { useRouter } from "next/router";
-// import Link from "next/link";
 import Aos from 'aos'
 import "aos/dist/aos.css"
 import { useEffect } from "react";
@@ -23,6 +22,7 @@ function Projects() {
   <div  id="projects" className='grid content-center md:min-h-screen'>
     
     <h1 className="ml-12 mt-8">Projects</h1>
+    <p className='ml-12 text-xs text-yellow-400'>swipe left to see more projects</p>
     
     <motion.div 
     initial={{opacity: 0}}
@@ -38,18 +38,17 @@ function Projects() {
            <img data-aos="zoom-in" className="w-96" src={project.src}/>
 
           <h1>{project.title}</h1>
-         <div className="flex flex-row w-3/4 "> 
-             <p className='text-white line-clamp-3 ml-12'>{project.text}</p>
+          <div className="flex flex-row w-3/4 "> 
+          <p className='text-white text-sm line-clamp-4 ml-12'>{project.text}</p>
          
             <button  
               onClick={(e) => handleClick(e, `${project.path}`)}
               className='mr-12 bg-white hover:bg-gray-300 hover:text-yellow-500 text-orange-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow'> 
               Learn more
-             </button>
+            </button>
          </div>
-           
-
-          </div>
+         
+      </div>
   
         )
       })}

@@ -1,5 +1,8 @@
+import { useEffect } from 'react'
 import { IoLogoGithub, IoGlobeSharp } from "react-icons/io5"
 import {Press_Start_2P} from '@next/font/google'
+import Aos from 'aos'
+import "aos/dist/aos.css"
 
 const press = Press_Start_2P({
   subsets: ['latin'],
@@ -7,9 +10,13 @@ const press = Press_Start_2P({
 })
 
 const ProjectPage = ({data,number}) => {
+
+  useEffect(()=>{
+    Aos.init({});
+}, []);
     
   return (
-    <div className={`${press.className} text-white portfolio pt-16 grid items-center md:h-screen`}>
+    <div   data-aos="zoom-in" className={`${press.className} text-white portfolio pt-16 grid items-center md:h-screen`}>
        {data.map((project)=>{
        
           return(
@@ -35,7 +42,7 @@ const ProjectPage = ({data,number}) => {
            
             </div>
             
-            <img className="md:w-full  w-80" src={project.image} alt={project.title}/>
+            <img className="md:w-full md:pb-0 pb-3 w-80" src={project.image} alt={project.title}/>
 
            
             </div>

@@ -1,10 +1,18 @@
-import { useRef, useState } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import Render from './Render'
 import emailjs from '@emailjs/browser';
+import Aos from 'aos'
+import "aos/dist/aos.css"
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
+
+
 const Contact = () => {
+
+  useEffect(()=>{
+    Aos.init({});
+  }, []);
 
   const [userName, setUserName]=useState("")
   const [userEmail, setUserEmail]=useState("")
@@ -43,11 +51,11 @@ const Contact = () => {
     <div  id="contact" className='grid content-center md:min-h-screen'>
      <h1 className='text-white md:ml-12 ml-10 text-3xl'>Get in touch</h1>
     
-     <div className= 'grid md:grid-cols-2 md:grid-rows-1 pt-5 pb-5 text-xs'> 
-      <form className='flex flex-col w-72 md:ml-12 ml-10' ref={form} onSubmit={sendEmail}  >
-      <p  className='text-white mb-5'>
-      If you have want to collebrate, have questions, or would love to chat,
-       please get in touch using this form
+     <div  className= 'grid md:grid-cols-2 md:grid-rows-1 pt-5 pb-5 text-xs'> 
+      <form data-aos='fade-right' className='flex flex-col w-72 md:ml-12 ml-10' ref={form} onSubmit={sendEmail}  >
+      <p  className='text-white mb-5 text-xs leading-loose'>
+      If you want to collebrate, have questions, or would love to chat,
+       please get in touch using this form or through my social links below
       </p>
         <label className='text-white mb-2' required>Name</label>
         <input onChange={(e)=>handleNameChange(e)} type="text" name="from_name" required/>
@@ -67,8 +75,8 @@ const Contact = () => {
           <ToastContainer theme='dark'/>
       </form>
       
-     
-      <Render />
+     <section data-aos='fade-left'><Render /> </section>
+      
     </div>
 
     </div>

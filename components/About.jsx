@@ -31,11 +31,11 @@ const About = () => {
               I consider art and tech as positive and creative outlets that allow me to combine art with problem-solving.<br></br>
               As I love giving back to my community, I am currently working as a project coordinator at a local NGO where I have the privilege of working on many cool projects with social impact.<br></br>
               In my free time, I enjoy reading as well as creating art through <span className='underline'><a href='https://www.instagram.com/floatingsol/' className='visited:text-purple-400' target='_blank'>drawing</a></span> and <span className='underline'><a href="https://www.instagram.com/randomiz.ed/" className='visited:text-purple-400' target='_blank'>photography</a></span>. <br></br>
-              <a className='text-yellow-300 hover:text-purple-400 flex flex-row' href='#contact'> 
+              <a className='text-yellow-400 hover:text-purple-400 flex flex-row' href='#contact'> 
               <HiSparkles className='w-9 h-7'/> let's work on something special</a> 
               
               
-              </p>
+            </p>
               
         </div>
         
