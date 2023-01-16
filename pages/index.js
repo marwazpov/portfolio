@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import { useState, useEffect } from 'react'
 import LandingPage from '../components/LandingPage'
 import {Press_Start_2P} from '@next/font/google'
 import Contact from '../components/Contact'
@@ -15,14 +14,7 @@ const press = Press_Start_2P({
 
 
 export default function Home() {
-  const [loading, setLoading] = useState(false)
-  
-  useEffect(()=>{
-    setLoading(true)
-    setTimeout(()=>{
-      setLoading(false)
-    },7000)
-  },[])
+
 
   return (
     <div className={`${press.className} flex-col text-white portfolio`}>
@@ -30,6 +22,7 @@ export default function Home() {
        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
         <title>Marwa Salameh</title>
       </Head>
+      
         <LandingPage />
         <About/>
         <Skills/>
