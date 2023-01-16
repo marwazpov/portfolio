@@ -27,7 +27,7 @@ const About = () => {
             <p className='text-xs leading-loose text-white' >
               a biology graduate turned front-end developer.<br></br>
               I partipated in <span className='underline'> <a href='https://www.credential.net/d1fa80d5-d6c9-4c2c-9578-0dd30a00c312' className='visited:text-purple-400' target='_blank'>Re:Coded's</a></span> front-end development bootcamp where I learned mutliple tech and soft skills.<br></br>
-              I am contantly exploring new frameworks & libraries as well as looking for oppurnites to grow as a developer.<br></br>
+              I am contantly exploring new frameworks & libraries as well as looking for opportunities to grow as a developer.<br></br>
               I consider art and tech as positive and creative outlets that allow me to combine art with problem-solving.<br></br>
               As I love giving back to my community, I am currently working as a project coordinator at a local NGO where I have the privilege of working on many cool projects with social impact.<br></br>
               In my free time, I enjoy reading as well as creating art through <span className='underline'><a href='https://www.instagram.com/floatingsol/' className='visited:text-purple-400' target='_blank'>drawing</a></span> and <span className='underline'><a href="https://www.instagram.com/randomiz.ed/" className='visited:text-purple-400' target='_blank'>photography</a></span>. <br></br>
