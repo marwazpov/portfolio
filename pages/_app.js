@@ -5,6 +5,8 @@ import { useEffect } from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
+
+
 import {Press_Start_2P} from '@next/font/google'
 
 const press = Press_Start_2P({
@@ -17,12 +19,17 @@ export default function App({ Component, pageProps }) {
     AOS.init({
     }
     )},[])
+  
+   
   return (
+    
+   
     <>
       <Navbar press={press} />
       <Component press={press} {...pageProps} />
       <Footer press={press}/>
     </>
+
   )
  
 }
