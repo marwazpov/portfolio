@@ -9,14 +9,14 @@ const LandingPage = () => {
         <h2 
         data-aos="fade-up"
         data-aos-duration="1000" 
-        className='pb-3 text-sm md:text-lg drop-shadow-lg shadow-black'>
+        className='pb-3 text-sm md:text-lg intro'>
              Hi, I am Marwa!
         </h2>
 
         <p 
         data-aos="fade-up"
         data-aos-duration="1200"
-        className='pb-3 text-xs text-center drop-shadow-xl shadow-yellow'
+        className='pb-3 text-xs text-center intro'
         >
            a front-end developer who is trying to combine her love for art and tech
         </p>
@@ -24,7 +24,7 @@ const LandingPage = () => {
         <button 
         data-aos="fade-up"
         data-aos-duration="1300"
-        className=' w-60 md:w-96 bg-white hover:bg-gray-300 hover:text-yellow-500 text-orange-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow'> 
+        className=' w-60 md:w-96 bg-white hover:bg-gray-300 hover:text-yellow-500 text-orange-700 font-semibold py-2 px-4 border border-gray-400 rounded shadow'> 
       <a className='text-xs md:text-lg' href="#about">GET TO KNOW ME!</a>
       </button>
       </div>
