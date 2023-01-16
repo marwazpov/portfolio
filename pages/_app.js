@@ -1,12 +1,10 @@
 import '../styles/globals.css'
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from 'react';
+import { useEffect,useState } from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-
-
-
+import Loader from '../components/Loader'
 import {Press_Start_2P} from '@next/font/google'
 
 const press = Press_Start_2P({
@@ -15,14 +13,22 @@ const press = Press_Start_2P({
 })
 
 export default function App({ Component, pageProps }) {
+  const [loading, setLoading] = useState(false)
+
   useEffect(() => {
     AOS.init({
-    }
-    )},[])
+    })
+
+    setLoading(true)
+    setTimeout(()=>{
+      setLoading(false)
+    },6000)
+  },[])
   
    
   return (
-    
+    loading?
+    <Loader/>:
    
     <>
       <Navbar press={press} />
