@@ -13,7 +13,7 @@ const press = Press_Start_2P({
 })
 
 export default function App({ Component, pageProps }) {
-  const [loading, setLoading] = useState(false)
+  const [loading, setLoading] = useState(true)
 
   useEffect(() => {
     AOS.init({

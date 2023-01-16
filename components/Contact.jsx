@@ -55,7 +55,7 @@ const Contact = () => {
      <div  className= 'grid md:grid-cols-2 md:grid-rows-1 pt-5 pb-5 text-xs'> 
       <form data-aos='fade-right' className='flex flex-col w-72 md:ml-12 ml-10' ref={form} onSubmit={sendEmail}  >
       <p  className='text-white mb-5 text-xs leading-loose'>
-      If you want to collebrate, have questions, or would love to chat,
+      If you want to collaborate, have questions, or would love to chat,
        please get in touch using this form or through my social links below
       </p>
         <label className='text-white mb-2' required>Name</label>

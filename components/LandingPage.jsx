@@ -9,14 +9,14 @@ const LandingPage = () => {
         <h2 
         data-aos="fade-up"
         data-aos-duration="1000" 
-        className='pb-3 text-sm md:text-lg'>
+        className='pb-3 text-sm md:text-lg drop-shadow-lg shadow-black'>
              Hi, I am Marwa!
         </h2>
 
         <p 
         data-aos="fade-up"
         data-aos-duration="1200"
-        className='pb-3 text-xs text-center'
+        className='pb-3 text-xs text-center drop-shadow-xl shadow-yellow'
         >
            a front-end developer who is trying to combine her love for art and tech
         </p>
