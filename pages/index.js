@@ -31,8 +31,8 @@ export default function Home() {
        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
         <title>Marwa Salameh</title>
       </Head>
-       {  loading ? 
-          <Loader loading={loading}/> :
+       {/* { loading ? 
+          <Loader loading={loading}/> : */}
           <>
             <LandingPage />
             <About/>
@@ -40,7 +40,7 @@ export default function Home() {
             <Projects/>
             <Contact/>
           </>
-       }
+     
 
      
       
