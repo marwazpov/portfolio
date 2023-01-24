@@ -16,7 +16,7 @@ const LandingPage = () => {
         <p 
         data-aos="fade-up"
         data-aos-duration="1200"
-        className='pb-3 text-xs text-center intro'
+        className='pb-3 text-xs text-center intro leading-relaxed'
         >
            a front-end developer who is trying to combine her love for art and tech
         </p>

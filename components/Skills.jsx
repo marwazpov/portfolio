@@ -4,7 +4,7 @@ const Skills = () => {
 
   return (
     
-    <div className='grid content-center lg:min-h-screen pl-8 pr-8 md:pl-10 md:pr-12' id='skills'>
+    <div className='grid content-center lg:h-screen pl-12 pr-8 md:pl-10 md:pr-12' id='skills'>
         <h1 className='pt-8 pb-8'>Skills</h1>
         <div className='grid grid-cols-2 place-items-center lg:grid-cols-5 gap-5 '>
             {skillsIcons.map((skill)=>{
