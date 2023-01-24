@@ -50,7 +50,7 @@ const Contact = () => {
   return (
     <div  id="contact" className='grid content-center md:h-screen'>
       <ToastContainer theme='dark'/>
-     <h1 className='text-white md:pt-8 pt-4 md:ml-12 ml-10 text-3xl'>Get in touch</h1>
+     <h1 className='text-white md:pt-8 pt-4 md:ml-12 ml-10'>Get in touch</h1>
     
      <div  className= 'grid md:grid-cols-2 md:grid-rows-1 pt-5 pb-5 text-xs'> 
       <form data-aos='fade-right' className='flex flex-col w-72 md:ml-12 ml-10' ref={form} onSubmit={sendEmail}  >
