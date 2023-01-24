@@ -21,7 +21,7 @@ function Projects() {
   return (
   <div  id="projects" className='grid content-center md:pt-8 md:min-h-screen'>
     
-    <h1 className="ml-12 mt-8">Projects</h1>
+    <h1 className="ml-12 mt-8 md:text-xl text-lg">Projects</h1>
     <p className='ml-12 text-xs text-yellow-400'>swipe left to see more projects</p>
     
     <motion.div 
