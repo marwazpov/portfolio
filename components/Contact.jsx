@@ -59,17 +59,17 @@ const Contact = () => {
        please get in touch using this form or through my social links below
       </p>
         <label className='text-white mb-2' required>Name</label>
-        <input onChange={(e)=>handleNameChange(e)} className="text-black" type="text" name="from_name" required/>
+        <input onChange={(e)=>handleNameChange(e)} className="bg-zinc-700 text-white" type="text" name="from_name" required/>
        <span className='text-red-700'>{userName !== "" ? <></>:'What can I call you?'}</span>
 
         <label className='text-white pt-5 mb-2' htmlFor='email' required>Email</label>
-        <input onChange={(e)=>handleEmailChange(e)} className="text-black" type="email" name="reply_to" required />
+        <input onChange={(e)=>handleEmailChange(e)} className="bg-zinc-700 text-white" type="email" name="reply_to" required />
         <span className='text-red-700'>{userEmail !== "" ? <></>:'Add your email so I can get back to you :)'}</span>
 
 
 
         <label className='text-white pt-5 mb-2' required>Message</label>
-        <textarea onChange={(e)=>handleTextChange(e)} className="text-black"  name="message"required />
+        <textarea onChange={(e)=>handleTextChange(e)} className="bg-zinc-700 text-white"  name="message"required />
         <input 
           className='border-solid border-2 mt-7 border-white text-white hover:text-black hover:bg-white hover:opacity-75 hover:rounded-lg'
           type="submit" value="Send" />
