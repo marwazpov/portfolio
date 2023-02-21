@@ -28,7 +28,7 @@ const ProjectPage = ({data,number}) => {
               
               <div className="flex col-span-2 mt-4"> 
                   <p> check code </p>
-                 <a href={project.link} className="hover:text-purple-400  visited:text-yellow-400" target='_blank'>
+                 <a href={project.code} className="hover:text-purple-400  visited:text-yellow-400" target='_blank'>
                   <IoLogoGithub className="w-10 h-8"/> 
                  </a>
                </div>
